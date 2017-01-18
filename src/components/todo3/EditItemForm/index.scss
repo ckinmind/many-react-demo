@@ -1,0 +1,32 @@
+.editform * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.editform {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    margin: 0;
+    width: calc(100% - 25px);
+    z-index: 10;
+    display: none;
+
+    & > input[type=text] {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding-right: 220px;
+    }
+    & > input[type=submit]{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.is--show {
+    display: block !important;
+}

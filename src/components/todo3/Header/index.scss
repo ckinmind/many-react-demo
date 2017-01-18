@@ -1,0 +1,27 @@
+.header h1 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 1rem 0;
+}
+
+.header a {
+    float: right;
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    font-weight: 400;
+    visibility: hidden;
+    text-decoration: none;
+    color: #26A69A;
+}
+
+.is--visible {
+    visibility: visible !important;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
