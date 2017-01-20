@@ -32,7 +32,7 @@ class Header extends React.Component {
         let showLinkClass = this.props.checkedItemsFlag ? 'is--visible' : '';
         return (
             <header className={ style.header }>
-                <h1 className={style.clearfix}>
+                <h1 className={ style.clearfix }>
                     {this.props.title}
                     <a
                         className={style[showLinkClass]}

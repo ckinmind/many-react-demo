@@ -3,6 +3,8 @@
 
 .wrapper {
     box-sizing: border-box;
+    margin: 0;
+    font: 100 14px 'Roboto';
 }
 
 .wrapper *,
@@ -11,10 +13,8 @@
     box-sizing: inherit;
 }
 
-body {
-    margin: 0;
-    font: 100 14px 'Roboto';
-}
+//body {
+//}
 
 button {
     display: block;
