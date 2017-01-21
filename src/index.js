@@ -6,5 +6,6 @@ import Route from './route';
 require('./styles/base.scss');
 ReactDOM.render(<Route />, document.getElementById('app'));
 
-// import App from './components/Calculator/App.js';
+
+// import App from './components/Motion/index';
 // ReactDOM.render(<App />, document.getElementById('app'));

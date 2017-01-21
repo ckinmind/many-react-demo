@@ -11,7 +11,7 @@ const Navbar = () => (
         <Link className="link" to="/todo1" activeClassName="link-active"> Todo1 </Link>
         <Link className="link" to="/todo2" activeClassName="link-active"> Todo2 </Link>
         <Link className="link" to="/todo3" activeClassName="link-active"> Todo3 </Link>
-        <Link className="link" to="/calculator" activeClassName="link-active"> Calculator </Link>
+        <Link className="link" to="/motion" activeClassName="link-active"> Motion </Link>
     </div>
 );
 

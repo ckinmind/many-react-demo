@@ -6,7 +6,7 @@ import Navbar from './components/navbar';
 import Todo1 from './components/todo1/App.js';
 import Todo2 from './components/todo2';
 import Todo3 from './components/todo3';
-import Calculator from './components/Calculator/App';
+import Motion from './components/Motion';
 
 
 const App = ({ children, location }) => (
@@ -61,7 +61,7 @@ export default () => (
             <Route path="todo1" component={Todo1} />
             <Route path="todo2" component={Todo2} />
             <Route path="todo3" component={Todo3} />
-            <Route path="calculator" component={Calculator} />
+            <Route path="motion" component={Motion} />
         </Route>
     </Router>
 );

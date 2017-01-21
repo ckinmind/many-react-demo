@@ -1,0 +1,21 @@
+
+$rowLen: 6;
+$width: 4rem;
+
+//#app {
+//    display: flex;
+//    justify-content: center;
+//}
+
+.container {
+    padding: $width;
+    width: $rowLen * $width;
+    height: $width * 4;
+}
+
+.box {
+    cursor: pointer;
+    height: $width;
+    position: absolute;
+    width: $width;
+}
