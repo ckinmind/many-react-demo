@@ -1,4 +1,7 @@
-import
+import React from 'react';
+import { createStore } from 'redux';
+import ReactDOM from 'react-dom';
+import styles from './App.scss';
 
 /*********
  * REACT
@@ -11,9 +14,15 @@ const Counter = ({ value, onIncrement, onDecrement, onReset }) => (
             <p id="display">{value}</p>
         </div>
         <div id="buttons-container" className="container">
-            <button id="increment-button" className="button" onClick={onIncrement}><i className="fa fa-plus"></i></button>
-            <button id="decrement-button" className="button" onClick={onDecrement}><i className="fa fa-minus"></i></button>
-            <button id="reset-button" className="button" onClick={onReset}><i className="fa fa-refresh"></i></button>
+            <button id="increment-button" className="button" onClick={onIncrement}>
+                <i className="fa fa-plus"></i>
+            </button>
+            <button id="decrement-button" className="button" onClick={onDecrement}>
+                <i className="fa fa-minus"></i>
+            </button>
+            <button id="reset-button" className="button" onClick={onReset}>
+                <i className="fa fa-refresh"></i>
+            </button>
         </div>
     </div>
 );
@@ -37,7 +46,7 @@ const render = () => {
                     store.dispatch({
                         type: 'DECREMENT'
                     });
-                };
+                }
             }}
             onReset={() => {
                 store.dispatch({
@@ -68,7 +77,7 @@ const counter = (state = 0, action) => {
 };
 
 /* Import { createStore } from 'redux' */
-const { createStore } = Redux;
+// const { createStore } = Redux;
 /* store uses counter as its reducer */
 const store = createStore(counter);
 
@@ -76,5 +85,5 @@ const store = createStore(counter);
 store.subscribe(render);
 
 /* Initial render */
-render();
+export default render;
 
