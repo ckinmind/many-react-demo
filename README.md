@@ -12,12 +12,12 @@
 - [Todo2](http://codepen.io/geobde/pen/LNmdbJ)：最简单的todo实现，值得关注的是其完成时打勾的实现，很有意思
 - [Todo3](http://codepen.io/hotate17/pen/oYKMaM)：一个功能很全面的todo例子，特色是可以选择todoitem的颜色
 - [Todo4](https://github.com/reactjs/redux/tree/master/examples)：redux官方实例中的todomvc,使用redux实现，学习redux很好的例子
-- [Calculator](http://codepen.io/mjijackson/pen/xOzyGX)一个类苹果手机中的计算器，很有意思的例子
-- [Motion](http://codepen.io/oksas/pen/jqJMZd):一个简单的使用react-motion的demo,React动画的一种实现方向
+- [Calculator](http://codepen.io/mjijackson/pen/xOzyGX)：一个类苹果手机中的计算器，很有意思的例子
+- [Motion](http://codepen.io/oksas/pen/jqJMZd)：一个简单的使用react-motion的demo,React动画的一种实现方向
 
 ## 应用使用的npm包
 - [react-motion](https://github.com/chenglou/react-motion): 用来实现eract动画
-- [classnames](https://github.com/JedWatson/classnames): 用来便捷操作css class,支持css modules(但是似乎与scss配和有问题，已发issue,待验证)
+- [classnames](https://github.com/JedWatson/classnames): 用来便捷操作css class,支持css modules（使用起来很方便）
 
 ## 如何开始
 ```js

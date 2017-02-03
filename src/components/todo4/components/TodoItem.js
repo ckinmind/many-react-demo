@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
 import TodoTextInput from './TodoTextInput';
 import styles from '../index.scss';
-// let cx = classNames.bind(styles);
+let cx = classNames.bind(styles);
 
 class TodoItem extends Component {
 
@@ -61,14 +61,12 @@ class TodoItem extends Component {
             )
         }
 
-        let completedClass = todo.completed ? 'completed' : '';
-        let editingClass = this.state.editing ? 'editing' : '';
-        // cx({
-        //     completed: todo.completed,
-        //     editing: this.state.editing
-        // })
+        let liClass = cx({
+            'completed': todo.completed,
+            'editing': this.state.editing
+        });
         return (
-            <li className={`${styles[completedClass]} ${styles[editingClass]}`}>
+            <li className={liClass}>
                 {element}
             </li>
         )

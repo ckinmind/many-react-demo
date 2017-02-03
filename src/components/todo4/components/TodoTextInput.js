@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from '../index.scss';
-// let cx = classNames.bind(styles);
+
+let cx = classNames.bind(styles);
 
 class TodoTextInput extends Component {
 
@@ -46,14 +47,12 @@ class TodoTextInput extends Component {
 
     render() {
 
-        let editClass = this.props.editing ? 'edit' : '';
-        let newTodoClass = this.props.newTodo ? 'new-todo' : '';
-        // const inputClass =  cx({
-        //     edit: this.props.editing,
-        //     'new-todo': this.props.newTodo
-        // });
+        const inputClass =  cx({
+            'edit': this.props.editing,
+            'new-todo': this.props.newTodo
+        });
         return (
-            <input className={`${styles[editClass]} ${styles[newTodoClass]}`}
+            <input className={inputClass}
                    type="text"
                    placeholder={this.props.placeholder}
                    autoFocus="true"

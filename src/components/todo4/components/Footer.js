@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
 import {SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE} from '../constants/TodoFilters';
 import styles from '../index.scss';
-// let cx = classNames.bind(styles);
+
+let cx = classNames.bind(styles);
 
 /* 这里的[]的用法是为了让其中的值是变量*/
 const FILTER_TITLES = {
@@ -36,10 +37,11 @@ class Footer extends Component {
         /* 注意这里的冒号的用法，将selectedFilter当成filter的别名，因为这里的外部的filter有别的值，即这里的 selectedFilter = this.props.filter */
         const {filter: selectedFilter, onShow} = this.props;
 
-        let selectedClass = filter === selectedFilter ? 'selected' : '';
-        // cx({selected: filter === selectedFilter})
+        let selectedClass = cx({
+            selected: filter === selectedFilter
+        });
         return (
-            <a className={styles[selectedClass]}
+            <a className={selectedClass}
                style={{cursor: 'pointer'}}
                onClick={() => onShow(filter)}>
                 {title}
