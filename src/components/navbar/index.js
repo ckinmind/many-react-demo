@@ -14,6 +14,7 @@ const Navbar = () => (
         <Link className="link" to="/todo4" activeClassName="link-active"> Todo4 </Link>
         <Link className="link" to="/calculator" activeClassName="link-active"> Calculator </Link>
         <Link className="link" to="/motion" activeClassName="link-active"> Motion </Link>
+        <Link className="link" to="/counter" activeClassName="link-active"> Counter </Link>
     </div>
 );
 

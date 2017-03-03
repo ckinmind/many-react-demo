@@ -11,6 +11,8 @@ import Todo4 from './components/todo4';
 import Calculator from './components/Calculator/App';
 import Motion from './components/Motion';
 
+import Counter from './components/Counter/App';
+
 
 const App = ({ children, location }) => (
     <div className="main">
@@ -67,6 +69,7 @@ export default () => (
             <Route path="todo4" component={Todo4} />
             <Route path="calculator" component={Calculator} />
             <Route path="motion" component={Motion} />
+            <Route path="counter" component={Counter} />
         </Route>
     </Router>
 );

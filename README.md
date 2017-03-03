@@ -14,9 +14,10 @@
 - [Todo4](https://github.com/reactjs/redux/tree/master/examples)：redux官方实例中的todomvc,使用redux实现，学习redux很好的例子
 - [Calculator](http://codepen.io/mjijackson/pen/xOzyGX)：一个类苹果手机中的计算器，很有意思的例子
 - [Motion](http://codepen.io/oksas/pen/jqJMZd)：一个简单的使用react-motion的demo,React动画的一种实现方向
+- [Counter](https://github.com/superNever/counter): 一个简单的应用MobX的计数器
 
 ## 应用使用的npm包
-- [react-motion](https://github.com/chenglou/react-motion): 用来实现eract动画
+- [react-motion](https://github.com/chenglou/react-motion): 用来实现react动画
 - [classnames](https://github.com/JedWatson/classnames): 用来便捷操作css class,支持css modules（使用起来很方便）
 
 ## 如何开始
@@ -27,4 +28,5 @@
 > npm start
 ```
 
-## issue说明
+## 问题收录
+- 关于应用mobx时因为缺少ES7的Decorators支持而报错的问题, 查看[issue 2](https://github.com/ckinmind/many-react-demo/issues/2)
