@@ -1,4 +1,6 @@
 # many-react-demo
+![many-react-demo](https://raw.githubusercontent.com/ckinmind/many-react-demo/master/src/images/screenshot.gif)
+
 各种react demo的合集，有todo应用等
 
 ## 项目说明
